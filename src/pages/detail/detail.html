@@ -1,0 +1,46 @@
+<!--
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tracking: {{rssi}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div id="track"></div>
+
+  <ion-fab right bottom style="padding: 16px;">
+    <button (click) = "track()" ion-button style="color: #009688; background-color: transparent;">Continue</button>
+  </ion-fab>
+
+</ion-content>
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tracking: {{rssi}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-grid>
+    <div style="width: 100%;">
+    
+    <div style = "text-align: center;">
+      <img style = "padding: 16px 0;" src="{{img}}" >
+    </div>
+    </div>
+ 
+
+</ion-grid>
+<div class="butt-container">
+
+  <button class="butt" (click) = "continue()">Confirm</button>
+</div>
+</ion-content>

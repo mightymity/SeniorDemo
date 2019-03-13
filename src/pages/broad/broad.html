@@ -1,0 +1,110 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Lab03</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<!--<ion-content padding>
+  <ion-card>
+  <ion-img src="./assets/imgs/room1.jpg" style="width: 100%; height: 42%;"></ion-img>
+  <div id="track"></div>
+  </ion-card>
+
+  <ion-fab right bottom style="padding: 16px;">
+    <button (click) = "continue()" ion-button style="color: #009688; background-color: transparent;">Continue</button>
+  </ion-fab>
+
+</ion-content>-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Location</ion-title>
+    <ion-buttons end >
+      <button ion-button icon-only (click)="continue()">
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-grid>
+  <ion-row>
+  <div>
+    <div class = "label1">
+      <span>Room Name: </span>
+    </div>
+    <div class = "value">
+      <span>Dr Ukrit Lab</span>
+    </div>
+  </div>
+  </ion-row>
+  <ion-row>
+    <div>
+      <div class = "label1">
+          <span>RouterID: </span>
+        </div>
+      <div class = "value">
+      <span>R1 </span>
+    </div>
+    </div>
+  </ion-row>
+  <ion-row>
+    <div style="width: 100%;">
+    <div class = "label1">
+          <span>Map: </span>
+      </div>
+
+    <div style = "text-align: center;">
+      <img style = "padding: 16px 0;" src="./assets/imgs/map1.png">
+    </div>
+    
+    </div>
+  </ion-row>
+  <ion-row>
+    <div style="width: 100%;">
+    <div class = "label1">
+          <span>Image: </span>
+      </div>
+
+    <div style = "text-align: center;">
+      <img style = "padding: 16px 0;" src="./assets/imgs/room1.jpg">
+    </div>
+    
+    </div>
+  </ion-row>
+
+
+</ion-grid>
+<div class="butt-container">
+
+  <button class="butt" (click) = "continue()">Confirm</button>
+</div>
+</ion-content>
+
+<!--<ion-header>
+
+  <ion-navbar>
+    <ion-title>Location</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div id="track"></div>
+
+  <ion-fab right bottom style="padding: 16px;">
+    <button (click) = "continue()" ion-button style="color: #009688; background-color: transparent;">Continue</button>
+  </ion-fab>
+
+</ion-content>-->
+

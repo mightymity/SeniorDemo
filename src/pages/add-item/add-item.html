@@ -1,0 +1,44 @@
+<!--
+  Generated template for the AddItemPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add Person</ion-title>
+    <ion-buttons end >
+      <button ion-button icon-only (click)="doAddItem()">
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="container">
+    <img class="previewImage" [src]=path />
+    <button round outline class = "btn" ion-button icon-only (click)="getImage()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </div>
+  <div padding>
+  <!--<ion-list>-->
+    <ion-item>
+      <ion-icon class = "icon2" name='pricetag' item-start ></ion-icon>
+      <ion-label floating text-left>Name :</ion-label>
+      <ion-input type="text" [(ngModel)]="itemName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon  class = "icon2"  name='key' item-start ></ion-icon>
+      <ion-label name = "trackerIdInput" floating text-left>Tracker ID :</ion-label>
+      <ion-input [(ngModel)]="trackerId" type="text"></ion-input>
+    </ion-item>
+
+  <!--</ion-list>-->
+  </div>
+
+</ion-content>

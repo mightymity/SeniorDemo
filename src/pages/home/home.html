@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      All People
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <ion-searchbar
+  [showCancelButton]="shouldShowCancel">
+  </ion-searchbar>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      <ion-row>
+      <img class = "image" [src]="item.img">
+      <div class = "label">
+        <span >{{item.name}}</span>
+      </div>
+      </ion-row>
+  </button>
+  </ion-list>
+   <ion-fab right bottom style="padding: 16px;">
+   <button (click)="add()" style="background-color:#009688;" ion-fab> <ion-icon ios="ios-add" md="md-add"></ion-icon></button>
+ </ion-fab>
+</ion-content>

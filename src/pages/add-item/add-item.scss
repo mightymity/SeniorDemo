@@ -1,0 +1,53 @@
+page-add-item {
+
+}
+//.input{
+//  text-align: center;
+//  padding: 12px 12px;
+//  color: grey;
+//  type : text;
+//}
+
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: #dedede;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.image{
+  width: 43px;
+  height: 43px;
+
+  border-radius: 24px;
+}
+
+
+.icon2{
+  padding-top: 24px;
+  alignment: bottom;
+  color: #117670;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+
+.container .previewImage {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #117670;
+  color: white;
+  border-color: #117670;
+}
+
+
